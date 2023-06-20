@@ -1,0 +1,100 @@
+body{
+  background-color:hsl(30, 38%, 92%) ;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;}
+.main{
+  display:flex ;
+  flex-direction: row;
+  min-height: 100vh;
+  min-width: 100%;
+  justify-content: center;
+  align-items:center ;
+}
+
+.container{
+  background: White;
+  border-radius: 10px;
+  display:flex ;
+  flex-direction: row;
+  max-width: 50%;
+}
+.container > div{
+  flex: 50%;
+}
+.child1{
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  background-image: url(images/image-product-desktop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.child2{
+  border-radius: 7px;
+  background: White;
+  padding: 32px;
+}
+
+.category{
+  color: hsl(228, 12%, 48%);
+}
+
+h2{
+  color: hsl(212, 21%, 14%);
+  font-family: 'Fraunces', serif;
+}
+
+p{
+  color: hsl(228, 12%, 48%);
+}
+
+.price{
+  display: flex;
+  align-items: center;
+}
+
+.price > div {
+  flex: 50%;
+}
+
+.price1 {
+  color: hsl(158, 36%, 37%);
+  font-family: 'Fraunces', serif;
+  font-size: 30px;
+  font-weight: 500;
+}
+.price2 {
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+}
+
+button{
+  min-width: 100%;
+  margin-top: 16px;
+  padding: 10px 0;
+  border-radius: 10px;
+  background: hsl(158, 36%, 37%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+}
+
+button > span {
+  color: white;
+  margin-left: 10px;
+  font-family: 'Montserrat', sans-serif
+}
+
+@media  only screen and (max-width : 500px){
+  .container{
+    max-width: 90%;
+    flex-direction: column;
+  }
+  .child1{
+    min-height: 175px;
+    background-image: url(images/image-product-mobile.jpg);
+
+  }
+}
